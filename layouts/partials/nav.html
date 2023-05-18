@@ -1,15 +1,15 @@
-{{ range .Site.Menus.main.ByWeight }}
+<!-- {{ range .Site.Menus.main.ByWeight }}
   <a href="{{ relLangURL .URL }}">{{ .Name }}</a>
 {{ end }}
 {{ with .Site.Social.email }}
 <a href='mailto:{{ . }}?subject={{ i18n "email-subject" }}"{{ default $.Site.Title $.Page.Title }}"'>Email</a>
-{{ end }}
+{{ end }} -->
 
 <!-- Convert this page's translations into a dict -->
-{{ $translations := dict }}
+<!-- {{ $translations := dict }}
 {{ range .Translations }}
   {{ $translations = merge $translations (dict .Language.Lang .) }}
-{{ end }}
+{{ end }} -->
 
 <!-- Create a link to every translation -->
 <!-- {{ range where .Site.Languages "Lang" "!=" .Page.Lang }}
